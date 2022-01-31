@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">آموزشگاه فرهیختگان</string>
+    <string name="subTitle_1">دارای مجوز از سازمان آموزش فنی و حرفه ای</string>
+    <string name="subTitle_2"> و بنیاد ICDL ایران ( وابسته به وزارت آموزش و پرورش)</string>
+    <string name="details">جزییات بیشتر</string>
+    <string name="depatment_computer"> کامپیوتر</string>
+    <string name="depatment_account"> حسابداری</string>
+    <string name="depatment_kid"> نوجوانان</string>
+    <string name="home">خانه</string>
+    <string name="WeTeachers">اساتید آموزشگاه</string>
+    <string name="Language"> تنظیمات زبان</string>
+    <string name="language_fa">فارسی</string>
+    <string name="language_en">انگلیسی</string>
+    <string name="ok">ثبت</string>
+    <string name="FrequentlyAskedQuestions">سوالات متداول</string>
+    <string name="About">درباره آموزشگاه</string>
+    <string-array name="list_Language">
+        <item>انگلیسی</item>
+        <item>فارسی</item>
+    </string-array>
+</resources>

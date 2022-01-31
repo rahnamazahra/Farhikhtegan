@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.farhikhtegan.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/acuuntingFragment"
+        android:name="com.example.farhikhtegan.AcuuntingFragment"
+        android:label="Acuunting"
+        tools:layout="@layout/fragment_acuunting" />
+    <fragment
+        android:id="@+id/kidFragment"
+        android:name="com.example.farhikhtegan.KidFragment"
+        android:label="Kid"
+        tools:layout="@layout/fragment_kid" />
+    <fragment
+        android:id="@+id/computerFragment"
+        android:name="com.example.farhikhtegan.ComputerFragment"
+        android:label="Computer"
+        tools:layout="@layout/fragment_computer" />
+
+
+</navigation>

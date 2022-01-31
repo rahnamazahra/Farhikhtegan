@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/purple_500"
+            app:layout_constraintBottom_toTopOf="@+id/Layer_A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="@color/purple_200"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="5"
+            app:sliderStartAutoCycle="true" />
+        <LinearLayout
+            android:id="@+id/Layer_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/Layer_B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageSlider"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+
+                android:id="@+id/TitleTeacher"
+                style="@style/sytle_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/WeTeachers" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layer_B"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Layer_A">
+
+            <TextView
+                android:id="@+id/TitleQuestion"
+                style="@style/sytle_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/FrequentlyAskedQuestions" />
+            <TextView
+
+                style="@style/sytle_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/About" />
+            <TextView
+
+                style="@style/sytle_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/About" />
+            <TextView
+
+                style="@style/sytle_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/About" />
+            <TextView
+
+                style="@style/sytle_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/About" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layer_c"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Layer_B">
+
+            <TextView
+
+                style="@style/sytle_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/About" />
+            <TextView
+
+                style="@style/sytle_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/About" />
+            <TextView
+
+                style="@style/sytle_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/About" />
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

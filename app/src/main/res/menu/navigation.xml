@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/acuuntingFragment"
+        android:icon="@drawable/account"
+        android:title="@string/depatment_account"/>
+
+    <item
+        android:id="@+id/empty"
+        android:title=""/>
+
+    <item
+        android:id="@+id/computerFragment"
+        android:icon="@drawable/comp"
+        android:title="@string/depatment_computer"/>
+
+    <item
+        android:id="@+id/kidFragment"
+        android:icon="@drawable/kid"
+        android:title="@string/depatment_kid"/>
+
+
+</menu>
